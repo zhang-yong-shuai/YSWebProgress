@@ -1,12 +1,12 @@
 //
-//  PDWebProgress.m
-//  TestProgressDemo
+//  YSWebProgress.m
+//  YSWebProgressDemo
 //
 //  Created by ZhangYongShuai on 16/9/6.
 //  Copyright © 2016年 XinYiChangXiang. All rights reserved.
 //
 
-#import "PDWebProgress.h"
+#import "YSWebProgress.h"
 
 float const kFirstStageBoundaryValue  = .6f;
 float const kSecondStageBoundaryValue = .8f;
@@ -17,25 +17,23 @@ NSTimeInterval const kWebProgressTimerDuration = .01f;
 NSTimeInterval const kFirstStageDuration  = 2.f;
 NSTimeInterval const kSecondStageDuration = 2.f;
 NSTimeInterval const kThirdStageDuration  = 3.f;
-NSTimeInterval const kEndStageDuaration = .3f;
+NSTimeInterval const kEndStageDuaration = .12f;
 
 #define kFirstStageOffSet  ((kFirstStageBoundaryValue - .1f) / kFirstStageDuration * kWebProgressTimerDuration)
 #define kSecondStageOffSet ((kSecondStageBoundaryValue - kFirstStageBoundaryValue)/ kSecondStageDuration * kWebProgressTimerDuration)
 #define kThirdStageOffSet  ((kThirdStageBoundaryValue - kSecondStageBoundaryValue) / kThirdStageDuration * kWebProgressTimerDuration)
 #define kEndStageOffset ((1.f - self.willEndProgress) / kEndStageDuaration * kWebProgressTimerDuration)
 
-@interface PDWebProgress ()
+@interface YSWebProgress ()
 
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, assign) float willEndProgress;// 即将结束时的progress
-@property (nonatomic, assign) BOOL isTerminated;// 是否已经结束
+@property (nonatomic, assign) BOOL isTerminated;    // 是否已经结束
 
 @end
 
-@implementation PDWebProgress
-
-
+@implementation YSWebProgress
 #pragma mark - life cycle
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     CGSize size = newSuperview.bounds.size;

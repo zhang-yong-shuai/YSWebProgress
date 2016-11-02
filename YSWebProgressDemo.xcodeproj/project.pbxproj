@@ -13,6 +13,7 @@
 		5287A3E01DC9C6590007C85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5287A3DE1DC9C6590007C85C /* Main.storyboard */; };
 		5287A3E21DC9C6590007C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5287A3E11DC9C6590007C85C /* Assets.xcassets */; };
 		5287A3E51DC9C6590007C85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5287A3E31DC9C6590007C85C /* LaunchScreen.storyboard */; };
+		5287A3EF1DC9C72B0007C85C /* YSWebProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5287A3EE1DC9C72B0007C85C /* YSWebProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5287A3E11DC9C6590007C85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5287A3E41DC9C6590007C85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5287A3E61DC9C6590007C85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5287A3ED1DC9C72B0007C85C /* YSWebProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSWebProgress.h; sourceTree = "<group>"; };
+		5287A3EE1DC9C72B0007C85C /* YSWebProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSWebProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5287A3D41DC9C6590007C85C /* YSWebProgressDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5287A3EC1DC9C72B0007C85C /* WebProgress */,
 				5287A3D81DC9C6590007C85C /* AppDelegate.h */,
 				5287A3D91DC9C6590007C85C /* AppDelegate.m */,
 				5287A3DB1DC9C6590007C85C /* ViewController.h */,
@@ -77,6 +81,15 @@
 				5287A3D61DC9C6590007C85C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5287A3EC1DC9C72B0007C85C /* WebProgress */ = {
+			isa = PBXGroup;
+			children = (
+				5287A3ED1DC9C72B0007C85C /* YSWebProgress.h */,
+				5287A3EE1DC9C72B0007C85C /* YSWebProgress.m */,
+			);
+			path = WebProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5287A3DD1DC9C6590007C85C /* ViewController.m in Sources */,
+				5287A3EF1DC9C72B0007C85C /* YSWebProgress.m in Sources */,
 				5287A3DA1DC9C6590007C85C /* AppDelegate.m in Sources */,
 				5287A3D71DC9C6590007C85C /* main.m in Sources */,
 			);
